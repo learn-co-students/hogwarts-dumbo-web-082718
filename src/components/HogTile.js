@@ -5,7 +5,7 @@ class HogTile extends Component {
     showPic: true
   };
 
-  clickHandler = e => {
+  clickHandler = (e) => {
     console.log(this.state.showPic);
     this.setState({
       showPic: !this.state.showPic

@@ -8,7 +8,7 @@ class Hogcontainer extends Component {
     hogInfo: hogs
   };
 
-  clickHandler = e => {
+  clickHandler = (e) => {
     console.log(e.target.id);
     if (e.target.id === "name") {
       let sortedHogs = [
@@ -52,6 +52,7 @@ class Hogcontainer extends Component {
     }
   };
   render() {
+    console.log(this.state);
     let hogTiles = this.state.hogInfo.map(hog => (
       <HogTile hogObj={hog} key={hog.name} clickHandler={this.clickHandler} />
     ));
